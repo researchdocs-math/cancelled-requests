@@ -1,0 +1,122 @@
+{
+  "time_unit": "millisecond",
+  "attempt_cap": 300,
+  "deadline": 80,
+  "candidate_delays": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    60,
+    80,
+    300
+  ],
+  "disabled_delay": 300,
+  "default_work_price": 0.12,
+  "default_audit_multiplier": 0.12,
+  "audit_probability_cap": 0.5,
+  "block_requests": 1000,
+  "history_blocks": 8,
+  "default_workers": 8,
+  "estimation": {
+    "families": 5,
+    "n": [
+      2000,
+      10000,
+      50000
+    ],
+    "seeds": [
+      50000,
+      50095
+    ],
+    "logging_delay": 40
+  },
+  "adaptive": {
+    "families": 6,
+    "policies": 8,
+    "n": 80000,
+    "seeds": [
+      100000,
+      100031
+    ]
+  },
+  "sensitivity": {
+    "families": [
+      "independent",
+      "correlated",
+      "common_shock"
+    ],
+    "n": 40000,
+    "seeds": [
+      70000,
+      70011
+    ],
+    "audit_multipliers": [
+      0.03,
+      0.06,
+      0.12,
+      0.24
+    ],
+    "work_prices": [
+      0.06,
+      0.12,
+      0.24
+    ]
+  },
+  "queue": {
+    "families": [
+      "independent",
+      "correlated",
+      "common_shock"
+    ],
+    "n": 30000,
+    "warmup": 2000,
+    "seeds": [
+      800000,
+      800011
+    ],
+    "loads": [
+      0.3,
+      0.6,
+      0.8,
+      0.95
+    ],
+    "cancel_lag": [
+      0,
+      5
+    ],
+    "continued_audit_probability": 0.02,
+    "calibration_n": 25000
+  },
+  "http": {
+    "families": [
+      "independent",
+      "common_shock"
+    ],
+    "payloads": [
+      "read",
+      "digest"
+    ],
+    "policies": [
+      "No hedge",
+      "Fixed 40",
+      "Completed p90",
+      "Bandit",
+      "CARE"
+    ],
+    "requests_per_run": 4000,
+    "seeds": [
+      950000,
+      950005
+    ],
+    "target_requests_per_second": 500,
+    "block_requests": 1000,
+    "runs": 120,
+    "binding": "127.0.0.1"
+  },
+  "numerical_comparison": {
+    "atol": 1e-09,
+    "rtol": 1e-09
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "backend": "mps",
+  "torch": "2.4.1",
+  "dtype": "float32",
+  "cpu_reference_dtype": "float64",
+  "tolerance": 1e-05,
+  "results": [
+    {
+      "scenario": "independent",
+      "requests": 1000000,
+      "candidate_evaluations": 8000000,
+      "max_mean_error": 3.305912016360324e-09,
+      "accelerator_seconds": 0.36205079103820026
+    },
+    {
+      "scenario": "correlated",
+      "requests": 1000000,
+      "candidate_evaluations": 8000000,
+      "max_mean_error": 1.0546850198744906e-08,
+      "accelerator_seconds": 0.007721583009697497
+    },
+    {
+      "scenario": "common_shock",
+      "requests": 1000000,
+      "candidate_evaluations": 8000000,
+      "max_mean_error": 9.94097963669116e-09,
+      "accelerator_seconds": 0.008741166966501623
+    },
+    {
+      "scenario": "asymmetric",
+      "requests": 1000000,
+      "candidate_evaluations": 8000000,
+      "max_mean_error": 1.0266866495856064e-08,
+      "accelerator_seconds": 0.008670666953548789
+    },
+    {
+      "scenario": "pareto",
+      "requests": 1000000,
+      "candidate_evaluations": 8000000,
+      "max_mean_error": 3.5277342505524167e-09,
+      "accelerator_seconds": 0.0090609589824453
+    }
+  ]
+}

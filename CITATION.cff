@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this software and dataset when using the implementation or measurements."
+type: software
+title: "Learning from Cancelled Requests: Experiments and Measurements"
+version: 1.0.0
+date-released: 2026-10-07
+authors:
+  - name: "Anonymous research contributors"
+license: MIT
+keywords:
+  - request hedging
+  - censoring
+  - completion audits
+  - tail latency
+abstract: "Seeded paired-duration experiments, a discrete-event queue simulator, and measured loopback HTTP workloads for cancellation-aware residual estimation."
